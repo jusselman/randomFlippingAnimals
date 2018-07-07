@@ -1,0 +1,66 @@
+body {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+}
+
+p {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Shrikhand', cursive;
+}
+
+.content {
+  margin: 150px auto;
+  display: block;
+  width: 40%;
+}
+
+button {
+  /* margin-top: 250px; */
+  padding: 15px;
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+  background: black;
+  border-style: none;
+}
+
+img {
+  height: 400px;
+  width: 400px;
+  padding: 50px;
+}
+.flip {
+
+  animation-name: anispin;
+  animation-duration: 4000;
+  animation-iteration-count: 1;
+  animation: anispin 1s ease-in-out;
+  /* display: none; */
+}
+
+@keyframes anispin{
+	0%{
+		transform: rotate(0deg);
+	}
+	20%{
+		transform: rotate(100deg);
+
+	}
+	40%{
+		transform: rotate(200deg);
+
+	}
+	60%{
+		transform: rotate(360deg);
+
+	}
+	80%{
+		transform: rotate(200deg);
+
+	}
+	100%{
+		transform: rotate(0deg);
+
+	}
+}
